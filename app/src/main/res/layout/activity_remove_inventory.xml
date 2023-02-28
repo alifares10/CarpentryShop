@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoveInventoryActivity"
+    android:background="@drawable/backgroundimage">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="176dp"
+        android:text="Remove/Update Items"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Type Item Name To Remove It From Inventory Or Update Its Quantity"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <EditText
+        android:id="@+id/editTextRemoveItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Item Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <Button
+        android:id="@+id/button_RemoveItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Remove"
+        app:layout_constraintEnd_toEndOf="@+id/editTextRemoveItemName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRemoveItemName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRemoveItemName" />
+
+    <Button
+        android:id="@+id/button_RemoveItemBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="44dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/buttonUpdateInv"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUpdateInv" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Item Name Is Case Sensetive"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <Button
+        android:id="@+id/buttonUpdateInv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Update Quantity"
+        app:layout_constraintEnd_toEndOf="@+id/button_RemoveItems"
+        app:layout_constraintStart_toStartOf="@+id/button_RemoveItems"
+        app:layout_constraintTop_toBottomOf="@+id/button_RemoveItems" />
+</androidx.constraintlayout.widget.ConstraintLayout>

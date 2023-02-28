@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProjActivity"
+    android:background="@drawable/backgroundimage">
+
+    <TextView
+        android:id="@+id/textView_addProj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Add Projects"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <EditText
+        android:id="@+id/editTextAddProjName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Customer Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/editTextAddProjPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Customer Phone"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAddProjName"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddProjName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddProjName" />
+
+    <EditText
+        android:id="@+id/editTextAddProjLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Project Location"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAddProjPhone"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddProjPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddProjPhone" />
+
+    <EditText
+        android:id="@+id/editTextAddProjDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Project Date"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAddProjLocation"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddProjLocation"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddProjLocation" />
+
+    <Button
+        android:id="@+id/button_AddProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAddProjDesc"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddProjDesc"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddProjDesc" />
+
+    <Button
+        android:id="@+id/button_BackToProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/button_AddProject"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button_AddProject"
+        app:layout_constraintTop_toBottomOf="@+id/button_AddProject" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Enter Projects Info And Press Add"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/textView_addProj"
+        app:layout_constraintStart_toStartOf="@+id/textView_addProj"
+        app:layout_constraintTop_toBottomOf="@+id/textView_addProj" />
+
+    <EditText
+        android:id="@+id/editTextAddProjDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Project Description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAddProjDate"
+        app:layout_constraintStart_toStartOf="@+id/editTextAddProjDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddProjDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

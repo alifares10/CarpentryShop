@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="177dp"
+        android:text="Update Worker Salary"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUpdateWorkSal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Enter New Salary"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/buttonUpdateWorkOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Update Salary"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUpdateWorkSal"
+        app:layout_constraintStart_toStartOf="@+id/editTextUpdateWorkSal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUpdateWorkSal" />
+
+    <Button
+        android:id="@+id/buttonUpdateSalCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/buttonUpdateWorkOk"
+        app:layout_constraintStart_toStartOf="@+id/buttonUpdateWorkOk"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUpdateWorkOk" />
+</androidx.constraintlayout.widget.ConstraintLayout>

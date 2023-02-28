@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddWorkersActivity"
+    android:background="@drawable/backgroundimage">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Add A New Worker"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextWorkerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Worker Full Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/editTextWorkerPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Worker Phone Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextWorkerID"
+        app:layout_constraintStart_toStartOf="@+id/editTextWorkerID"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWorkerID" />
+
+    <EditText
+        android:id="@+id/editTextWorkerAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Worker Date Of Birth"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextWorkerPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextWorkerPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWorkerPhone" />
+
+    <EditText
+        android:id="@+id/editTextWorkerSal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Worker Hourly Salary"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextWorkerAge"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextWorkerAge"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWorkerAge" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Enter The Workers Info And Press Add"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/buttonAddWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="@+id/editTextWorkerSal"
+        app:layout_constraintStart_toStartOf="@+id/editTextWorkerSal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWorkerSal" />
+
+    <Button
+        android:id="@+id/buttonBackWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAddWork"
+        app:layout_constraintStart_toStartOf="@+id/buttonAddWork"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddWork" />
+
+    <EditText
+        android:id="@+id/editTextWorkerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Worker ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextWorkerName"
+        app:layout_constraintStart_toStartOf="@+id/editTextWorkerName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWorkerName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

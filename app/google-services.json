@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "183937473916",
+    "project_id": "carpentryshop-e15bd",
+    "storage_bucket": "carpentryshop-e15bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183937473916:android:f14dffc7e92a1b4c2f58f9",
+        "android_client_info": {
+          "package_name": "com.example.carpentryshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183937473916-7fo6fviasqoi5aa94km34534f4us4h3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuH_OaJvVXwCxyg83dxCajFgn6ck-mh08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183937473916-7fo6fviasqoi5aa94km34534f4us4h3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoveWorkerActivity"
+    android:background="@drawable/backgroundimage">
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="176dp"
+        android:text="Remove/Update Workers"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Type Worker Name To Remove Them Or Update Some Of Their Info"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="@+id/textView27"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <EditText
+        android:id="@+id/editTextRemoveWorkerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Worker Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <Button
+        android:id="@+id/button_RemoveWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Remove"
+        app:layout_constraintEnd_toEndOf="@+id/buttonUpdateWorker"
+        app:layout_constraintStart_toStartOf="@+id/buttonUpdateWorker"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUpdateWorker" />
+
+    <Button
+        android:id="@+id/button_RemoveWorkerBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/button_RemoveWorker"
+        app:layout_constraintStart_toStartOf="@+id/button_RemoveWorker"
+        app:layout_constraintTop_toBottomOf="@+id/button_RemoveWorker" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Worker Name Is Case Sensetive"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <Button
+        android:id="@+id/buttonUpdateWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Update Info"
+        app:layout_constraintEnd_toEndOf="@+id/editTextRemoveWorkerName"
+        app:layout_constraintStart_toStartOf="@+id/editTextRemoveWorkerName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRemoveWorkerName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
